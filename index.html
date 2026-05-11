@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Gray announcement bar -->
+  <div class="announcement-bar">
+    Reminder: Check your timetable regularly and complete your assignments on time!
+  </div>
+
+  <!-- Blue header -->
+  <div class="blue-header">
+    <div class="blue-header-content">
+      <h1>Grade Askar Project</h1>
+      <nav class="blue-nav">
+        <a href="https://nc-binom.edupage.org/timetable/">Timetable</a>
+        <a href="https://create.kahoot.it/">Kahoot</a>
+        <a href="https://chat.openai.com">ChatGPT</a>
+        <a href="https://kundelik.kz/userfeed">kundelik</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <div class="hero-images">
+      <img src="1.png" alt="Timetable" class="hero-img" />
+      <img src="2.png" alt="Notebook" class="hero-img2" />
+    </div>
+
+    <div class="notes">
+      <h2>Notes</h2>
+      <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+
+      <div class="calculator">
+        <h2>Calculator</h2>
+        <input type="text" id="calcDisplay" readonly />
+        <div class="calc-buttons">
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+          <button onclick="appendValue('/')">÷</button>
+
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('*')">×</button>
+
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button onclick="appendValue('-')">−</button>
+
+          <button onclick="appendValue('0')">0</button>
+          <button onclick="appendValue('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="appendValue('+')">+</button>
+
+          <button class="clear" onclick="clearDisplay()">C</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
